@@ -7,6 +7,9 @@ body{
     background-size: cover;
     margin: 0;
     padding: 0;
+    /* width: 100vh; */
+    height: 100vh;
+
 
 
     
@@ -59,7 +62,7 @@ header {
    
 }
 
-.gg-user, gg-search, gg-bell, gg-shopping-bag{
+.gg-user, .gg-search, .gg-bell, .gg-shopping-bag{
         color: #fff;
         size: 20px;
 }
@@ -99,7 +102,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    /* padding: 2rem; */
+    height: 80vh;
+    /* margin-top: 5%; */
 }
 /* Styles pour la neswletter */
 
@@ -107,12 +112,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35rem;
-	height: 30rem;
+    width: 35%;
+	height: 75%;
     padding: 1rem;
     background: #ffffff;
-    border-radius: 2px;
+    border-radius: 5px;
     opacity: 0.8;
+    margin-right: 5%;
 
 }
 
@@ -127,7 +133,7 @@ header {
 	background: white;
 	width: 95%;
 	height: 95%;
-    border-radius: 2px;
+    border-radius: 5px;
     border: 2px solid;
     border-color: #CAD3DB;
     
@@ -135,12 +141,12 @@ header {
 
 .subscribe-asset{
    
-    padding: 1rem;
+    padding: 1%;
 }
 
 .subscribe-logo {
     width: 10%;
-    padding-top: 0.5rem;
+    padding-top: 0.5%;
 }
 
 .subscribe-title {
@@ -149,14 +155,14 @@ header {
     color: #386677;
 	font-weight: 500;
 	font-size: x-large;
-	margin-bottom: 1rem;
+	margin-bottom: 2%;
 }
 
 .subscribe-text {
     
 	max-width: 80%;
 	text-align: center;
-	margin-bottom:2rem;
+	margin-bottom:3%;
 	line-height: 1.5;
     font-size: large;
     display:contents;
@@ -172,7 +178,7 @@ header {
 }
 
 .form {
-	margin-bottom: 25px;
+	margin-bottom: 5%;
     display: flex;
 }
 
@@ -225,39 +231,44 @@ header {
     align-items: center;
     position: fixed;
     width: 35%;
-    min-height: 100vh;
+    height: 110vh;
     background-color: rgba(255, 255, 255, 0.5); 
     z-index: 1;
-    transform: translateY(-26.8rem);
-    margin-left: 10rem;
+    transform: translateY(-58.2%);
+    margin-left: 10%;
   
 }
   
 .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
     position: relative;
-    margin-top: 15rem;    
+    margin-top: 15%;    
 
 /* left: 50%; */
     /* transform: translate(-50%, -50%); */
 
-    width: 80%; 
-    height: 50%; 
+    width: 50%; 
+    height: 30%; 
     background-color: transparent; 
     opacity: 0.8;
     
 }
 
 .pic-ctn {
-    width:50rem;
-    height: 45rem;
+    width:20rem;
+    height: 20rem;
     overflow: hidden;
     position: relative;
+    border-radius: 5px;
     
 }
 
 .pic {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     transition: opacity 0.5s;
     opacity: 0;
@@ -272,7 +283,7 @@ header {
 
 .carousel-controls {
     position: fixed;
-    right: 85rem;
+    right: 95%;
     top: 35%; 
     display: flex;
     flex-direction: column; 
@@ -280,12 +291,12 @@ header {
 
 .carousel-controls i {
     margin: 4rem 0;
-    color: #fff;
+    color: #ddd9d9;
     cursor: pointer;
 }
 
 .gg-arrow-down, .gg-arrow-up {
-    --ggs: 2;
+    --ggs: 1.5;
 }
 
 
@@ -375,14 +386,6 @@ header {
         display: none; 
     }
 
-
-
-    /* Mise en place d'un menu Hamburger
-    .header-hamburger {
-        display: block; 
-        text-align: center;
-        margin-top: 0; 
-    } */
    
     /* Affichage vertical des éléments du main  */
     .main {
@@ -390,16 +393,17 @@ header {
         align-items: center; 
     }
 
-    .page-container{
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        margin-top: 3rem;
-    }
-
+  
     .subscribe-container{
-        width: 95%;
-        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        width: 90%;
+        height: 60%;
+        margin-bottom: 10rem;
+        margin-left: 5%;
     }
 
     .subscribe {
@@ -410,10 +414,9 @@ header {
     }
 
     .subscribe-text{
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        align-content: center;
+        font-size: medium;
+        width: 90%;
+
 
     }
 
@@ -422,7 +425,7 @@ header {
     }
 
     .form-email {
-        padding: 1rem 2rem;
+        padding: 0.5rem 2rem;
 
     }
 
@@ -430,7 +433,10 @@ header {
         display: none;
     }
 
-    
+    .carousel-controls {
+        display: none;
+
+    }
 
     /* Affichage du menu Hamburger et de la sidebar */
 
