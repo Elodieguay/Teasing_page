@@ -1,0 +1,468 @@
+// Les imports
+// @import 'media_queries';
+// @import 'sidebar_menu';
+
+
+// Définition des variables
+$main-color: #fff;
+$text-color: #000;
+$bg-image: url('../assets/voile13.jpg');
+$bg-image-mobile: url('../assets/voile15.jpg');
+
+// Styles pour le body
+body{
+
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  /* width: 100vh; */
+  height: 100vh;
+
+
+
+  
+}
+
+/* Styles pour le header */
+header {
+  color: #fff;
+  text-align: center;
+  padding: 0rem 1rem;
+  text-transform: uppercase;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.header-langage{
+  display: flex;
+  
+}
+
+.li-langage {
+  font-size: small;
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+  gap: 1rem;
+  padding: 0rem;
+  text-decoration: none;
+  
+}
+
+.li-langage a, .header-logo a, .nav-ul a, .li-user a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-logo {
+  font-size:large;
+  padding-right: 2rem;
+}
+
+.header-login {
+
+  display: flex;
+  list-style: none;
+ 
+}
+
+.gg-user, .gg-search, .gg-bell, .gg-shopping-bag{
+      color: #fff;
+      size: 20px;
+}
+
+.li-user {
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+
+}
+         
+
+.header-nav {
+  text-decoration: none;
+  padding: 0rem 15rem;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  list-style: none;
+  padding: 0 -6rem;
+  text-decoration: none;
+  
+  a.nav-ul{
+      text-decoration: none;
+
+  }
+
+}
+
+.main{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 2rem; */
+  height: 80vh;
+  /* margin-top: 5%; */
+}
+/* Styles pour la neswletter */
+
+.subscribe-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+height: 75%;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 5px;
+  opacity: 0.8;
+  margin-right: 5%;
+
+}
+
+.subscribe {
+  
+display: flex;
+flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+align-items: center;
+background: white;
+width: 95%;
+height: 95%;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #CAD3DB;
+  
+}
+
+.subscribe-asset{
+ 
+  padding: 1%;
+}
+
+.subscribe-logo {
+  width: 10%;
+  padding-top: 0.5%;
+}
+
+.subscribe-title {
+  font-size:x-large;
+  text-transform: uppercase;
+  color: #386677;
+font-weight: 500;
+font-size: x-large;
+margin-bottom: 2%;
+}
+
+.subscribe-text {
+  
+max-width: 80%;
+text-align: center;
+margin-bottom:3%;
+line-height: 1.5;
+  font-size: large;
+  display:contents;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* justify-items: center; */
+  /* align-content: center; */
+  /* margin: 2rem; */
+} 
+
+.span-text{
+  font-weight: bold;
+}
+
+.form {
+margin-bottom: 5%;
+  display: flex;
+}
+
+.form-email {
+padding: 1rem 5rem;
+border-radius: 5px 0px 0px 5px;
+ border: 1px solid #CAD3DB;
+width: 100%;
+font-size: small;
+color: #0F121F;
+}
+
+.form-email:focus {
+outline: 1px solid #386677;
+}
+
+.form-button {
+background:#386677;
+border: none;
+width: 4rem;
+border-radius: 0px 5px 5px 0px;
+font-size: 18px;
+
+}
+
+.gg-check {
+  color: #fff;
+}
+
+.form-button:hover {
+box-shadow: 0 10px 20px rgba(47, 51, 55, 0.7);
+}
+
+.notice {
+width: 80%;
+  font-size: small;
+}
+
+
+/* Styles pour le carrousel  */
+.page-container{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 35%;
+  height: 110vh;
+  background-color: rgba(255, 255, 255, 0.5); 
+  z-index: 1;
+  transform: translateY(-58.2%);
+  margin-left: 10%;
+
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  margin-top: 15%;    
+
+/* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+
+  width: 50%; 
+  height: 30%; 
+  background-color: transparent; 
+  opacity: 0.8;
+  
+}
+
+.pic-ctn {
+  width:20rem;
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: opacity 0.5s;
+  opacity: 0;
+  
+}
+
+.pic.active {
+  opacity: 1;
+}
+
+/* Les boutons de control du carousel */
+
+.carousel-controls {
+  position: fixed;
+  right: 95%;
+  top: 35%; 
+  display: flex;
+  flex-direction: column; 
+}
+
+.carousel-controls i {
+  margin: 4rem 0;
+  color: #ddd9d9;
+  cursor: pointer;
+}
+
+.gg-arrow-down, .gg-arrow-up {
+  --ggs: 1.5;
+}
+
+
+/* Création du Menu Hanburger */
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+/* Création d'une sidebar semi-transparente et initialement caché */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+  transition: left 0.3s; 
+  z-index: 2; 
+}
+
+.sidebar.active {
+  left: 0; 
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 20px;
+}
+
+.sidebar-menu li {
+  margin: 10px 0;
+}
+
+.sidebar-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Styles pour le bouton de fermeture de la sidebar */
+
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-icon .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+
+/* MEDIAS QUERIES */
+
+
+@media(min-width: 1025px) {
+  body {
+      background-image: $bg-image;
+ }
+
+  .menu-icon {
+      display: none;
+  }
+
+  .sidebar {
+      display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  body {
+      background-image: $bg-image-mobile;
+      background-size: cover;
+      background-position: center center;
+  }
+
+  .header-nav, .header-user, .li-langage {
+      display: none; 
+  }
+
+ 
+  /* Affichage vertical des éléments du main  */
+  .main {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+
+  .subscribe-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      align-content: center;
+      width: 90%;
+      height: 60%;
+      margin-bottom: 10rem;
+      margin-left: 5%;
+  }
+
+  .subscribe {
+
+      width: 95%;
+      padding: 0.5rem;
+  
+  }
+
+  .subscribe-text{
+      font-size: medium;
+      width: 90%;
+
+
+  }
+
+  .subscribe-title {
+      font-size: medium;
+  }
+
+  .form-email {
+      padding: 0.5rem 2rem;
+
+  }
+
+  .carousel-background {
+      display: none;
+  }
+
+  .carousel-controls {
+      display: none;
+
+  }
+
+  /* Affichage du menu Hamburger et de la sidebar */
+
+  .menu-icon {
+      display: block;
+      margin-top: 1rem; 
+  }
+
+  .sidebar {
+      display: none; 
+  }
+
+  .sidebar.active {
+      display: block; 
+      text-align: left;
+  }
+
+}
